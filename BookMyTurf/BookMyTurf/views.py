@@ -8,8 +8,7 @@ def index(request):
 
 
 def login(request):
-    pram = {'name': 'Ishan', 'location': 'INDORE'}
-    return render(request, 'login.html', pram)
+    return render(request, 'login.html')
 
 
 def bookturf(request):
