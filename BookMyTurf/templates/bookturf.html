@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bookturf.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Book Venue</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    @media all and (max-width: 900px) {
+      .cardbox {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+
+      .main_card {
+        flex-basis: 75%;
+        height: auto;
+        margin: 20px;
+      }
+    }
+
+    .cardbox {
+      background-color: #c8e9cc;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;
+      /* margin-top: 10px; */
+      /* flex-basis: 33.333333% */
+      /* max-width: 1100px; */
+    }
+
+    .main_card {
+      background-color: #ffffff;
+      margin: 40px 0px;
+      display: flex;
+      flex-direction: column;
+      width: 27%;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      padding-bottom: 20px;
+    }
+
+    .image {
+      height: 70%;
+      overflow: hidden;
+      margin: 15px;
+    }
+
+    .image img {
+      /* background-color: rgb(179, 0, 255); */
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      border: 1px solid;
+    }
+
+    .text {
+      /* background-color: bisque; */
+      text-align: center;
+      height: 15%;
+    }
+
+    .text p {
+      text-align: center;
+    }
+
+    .btn {
+      height: 50px;
+      width: 50%;
+      margin: auto;
+      border-radius: 5px;
+      position: relative;
+      overflow: hidden;
+    }
+    .btn .btn-layer {
+      height: 100%;
+      width: 300%;
+      position: absolute;
+      left: -100%;
+      background: -webkit-linear-gradient(
+        right,
+        #0f9c3e,
+        #69e88b,
+        #0f9c3e,
+        #69e88b
+      );
+      border-radius: 5px;
+      transition: all 0.4s ease;
+    }
+    .btn:hover .btn-layer {
+      left: 0;
+    }
+    .btn input[type="submit"] {
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+      position: relative;
+      background: none;
+      border: none;
+      color: #fff;
+      padding-left: 0;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  </style>
+
+  <body>
+    <!-- <div class="wrap">
+        <div class="search">
+            <input type="text" class="searchTerm" placeholder="What are you looking for?">
+            <button type="submit" class="searchButton">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+    </div> -->
+
+    <div class="cardbox">
+      <div class="main_card">
+        <div class="image">
+          <img src="images/vision-PhotoRoom.png-PhotoRoom.png" alt="" />
+        </div>
+        <div class="text">Goyal Nagar, Indore</div>
+        <div class="field btn">
+          <div class="btn-layer"></div>
+          <input type="submit" value="Book Now" />
+        </div>
+      </div>
+
+      <div class="main_card">
+        <div class="image">
+          <img src="images/Goal-PhotoRoom.png-PhotoRoom.png" alt="" />
+        </div>
+        <div class="text">Goyal Nagar, Indore</div>
+        <div class="field btn">
+          <div class="btn-layer"></div>
+          <input type="submit" value="Book Now" />
+        </div>
+      </div>
+
+      <div class="main_card">
+        <div class="image">
+          <img src="images/vision-PhotoRoom.png-PhotoRoom.png" alt="" />
+        </div>
+        <div class="text">
+          <p>Goyal Nagar, Indore</p>
+        </div>
+        <div class="field btn">
+          <div class="btn-layer"></div>
+          <input type="submit" value="Book Now" />
+        </div>
+      </div>
+
+      <div class="main_card">
+        <div class="image">
+          <img src="images/vision-PhotoRoom.png-PhotoRoom.png" alt="" />
+        </div>
+        <div class="text">
+          <p>Goyal Nagar, Indore</p>
+        </div>
+        <div class="field btn">
+          <div class="btn-layer"></div>
+          <input type="submit" value="Book Now" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

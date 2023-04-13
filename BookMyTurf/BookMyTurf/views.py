@@ -12,16 +12,16 @@ def login(request):
 
 
 def bookturf(request):
-    return HttpResponse("bookturf")
+    return render(request, 'bookturf.html')
 
 
 def service(request):
-    return HttpResponse("service")
+    return render(request, 'service.html')
 
 
 def aboutus(request):
-    return HttpResponse("aboutus")
+    return render(request, 'aboutus.html')
 
 
 def contactus(request):
-    return HttpResponse("contactus")
+    return render(request, 'contactus.html')
